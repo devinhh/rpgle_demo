@@ -7,7 +7,7 @@
 
       //---------------------------------------------------------------*
 
-      /copy 'constants.rpgleinc'
+      /copy 'qrpgleref/constants.rpgleinc'
 
 
 
