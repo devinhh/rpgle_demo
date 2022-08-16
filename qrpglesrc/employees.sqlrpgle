@@ -115,25 +115,25 @@ Dcl-Proc LoadSubfile;
 
   If (rrn > 0);
     SflDsp = *On;
-    SFLRRN = 1;
-  Endif;
-End-Proc;
-
+    SFLRRN = 1;  
+  Endif;         
+End-Proc;        
+                 
 Dcl-Proc HandleInputs;
   Dcl-S SelVal Char(1);
-
+                 
   Dou (%EOF(emps));
     ReadC SFLDTA;
     If (%EOF(emps));
-      Iter;
-    Endif;
-
+      Iter;      
+    Endif;       
+                 
     SelVal = %Trim(XSEL);
-
-    Select;
+                 
+    Select;      
       When (SelVal = '5');
         DSPLY XID;
-    Endsl;
+    Endsl;       
          
     If (XSEL <> *Blank);
       XSEL = *Blank;
